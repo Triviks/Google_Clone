@@ -1,0 +1,147 @@
+.search-head form input {
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: transparent !important;
+}
+
+.search-head form {
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search-head #search-icon {
+    font-size: 24px;
+    color: rgba(0, 55, 255, 0.637);
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.search-head .voice-search {
+    width: 30px;
+    cursor: pointer;
+}
+
+.page_options {
+    /* border: 2px solid black; */
+    margin-left: 220px;
+    margin-top: 20px;
+}
+
+.page_options #tools {
+    /* border: 1px solid blue; */
+    width: 50%;
+    cursor: pointer;
+}
+
+.page_options #tools li {
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+.page_options #tools li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.page_options #options li {
+    cursor: pointer;
+}
+
+.page_options #options li.active {
+    text-decoration: underline;
+    text-underline-offset: 25px;
+}
+
+.search_results {
+    padding: 80px 180px;
+}
+
+.search_results div a:nth-child(1) {
+    font-size: small !important;
+    color: purple;
+}
+
+.search_results div a:nth-child(2) {
+    font-size: small !important;
+    color: darkblue;
+}
+
+
+/* For small screens */
+@media (max-width: 576px) {
+    .search-head {
+        padding: 10px 0;
+        font-size: small;
+    }
+
+    .search-head .logo img {
+        width: 80px;
+    }
+
+    .search-head form {
+        width: 250px !important;
+        margin-left: -20px;
+    }
+
+    .search-head #search-icon {
+        font-size: 45px;
+    }
+    
+    .search-head .voice-search {
+        width: 45px;
+    }
+
+    .search-head .image-search {
+        width: 45px;
+    }
+
+    .page_options {
+        margin-left: 0;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page_options #tools {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search_results {
+        padding: 50px 20px;
+    }
+}
+
+/* For medium screens */
+@media (min-width: 577px) and (max-width: 992px) {
+    .search-head .container-fluid {
+        padding: 0;
+    }
+
+    .search-head .logo img {
+        width: 100px;
+    }
+
+    .search-head form {
+        width: calc(100% - 60px);
+    }
+
+    .page_options {
+        margin-left: 0;
+        margin-top: 10px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .page_options #tools {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .search_results {
+        padding: 80px 100px;
+    }
+}
+
